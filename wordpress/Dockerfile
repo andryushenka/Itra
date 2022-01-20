@@ -6,5 +6,6 @@ ARG DB_HOST
 RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
 WORKDIR /var/www
 RUN wget https://wordpress.org/latest.tar.gz && tar -xf latest.tar.gz && rm -R latest.tar.gz
+COPY wp-config.php /var/www/wordpress
 RUN chown -R www-data:www-data /var/www/wordpress
 RUN chmod -R 755 /var/www/wordpress

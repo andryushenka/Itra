@@ -8,4 +8,4 @@ sudo apt install -y docker-ce
 sudo snap install amazon-ssm-agent --classic
 
 sudo add-apt-repository universe
-sudo apt install php-fpm php-mysql php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip
+sudo apt install -y php-fpm php-mysql php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip
